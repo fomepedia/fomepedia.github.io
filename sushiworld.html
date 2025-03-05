@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sushi World - Fomepédia</title>
+    <title>Sushi do Cabrunquinho - Fomepédia</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,10 +22,10 @@
             text-align: center;
             margin-bottom: 30px;
         }
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            color: #FF4500;
+        .logo img {
+            width: 120px;
+            height: auto;
+            border-radius: 50%;
         }
         .restaurant-container {
             background: #222;
@@ -52,7 +52,7 @@
         .btn-secondary:hover {
             background: #555;
         }
-       
+    
         textarea {
         width: 80%;
         height: 80px;
@@ -73,7 +73,6 @@
             font-size: 16px;
             transition: 0.3s;
         }
-
         button:hover {
             background: #FF4500; 
         }
@@ -115,7 +114,7 @@
         }
         iframe {
             width: 100%;
-            height: 250px; /* Menor altura para caber melhor */
+            height: 250px;
             border: 0;
             border-radius: 10px;
         }       
@@ -124,15 +123,18 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">Fomepédia</div>
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="https://444kyxg.github.io/fomepedia.png" alt="Logo Fomepédia">
+                </a>
+            </div>
         </header>
         <div class="restaurant-container">
-            <h2>Sushi World</h2>
+            <h2>Sushi do Cabrunquinho</h2>
             <p>Descubra o autêntico sabor do Japão com nossos sushis e sashimis preparados por chefs especializados.</p>
             <p>Endereço: Avenida Oriental, 456 - Bairro Nippon</p>
             <p>Horário de funcionamento: 12h - 22h</p>
             
-            <!-- Mapa inserido dentro do container -->
             <div class="map-container">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18261.681238090427!2d-37.063009591863334!3d-10.984007031376397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab15f92413bf1%3A0xecfc2a9f46e0c46!2sEspetinho%20bom%20do%20cabrunco!5e1!3m2!1spt-BR!2sbr!4v1741207160969!5m2!1spt-BR!2sbr" 

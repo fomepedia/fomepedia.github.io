@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Hub - Fomepédia</title>
+    <title>Zy's Pizza - Fomepédia</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,9 +23,13 @@
             margin-bottom: 30px;
         }
         .logo {
-            font-size: 28px;
-            font-weight: bold;
-            color: #FF4500;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 120px;
+            height: auto;
+            border-radius: 50%;
         }
         .restaurant-container {
             background: #222;
@@ -59,12 +63,10 @@
         }
         iframe {
             width: 100%;
-            height: 250px; /* Tamanho ajustado */
+            height: 250px;
             border: 0;
             border-radius: 10px;
         }
-
-        /* Estilos dos comentários */
         textarea {
             width: 80%;
             height: 80px;
@@ -85,7 +87,6 @@
             font-size: 16px;
             transition: 0.3s;
         }
-
         button:hover {
             background: #FF4500;
         }
@@ -125,15 +126,18 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">Fomepédia</div>
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="https://444kyxg.github.io/fomepedia.png" alt="Logo Fomepédia">
+                </a>
+            </div>
         </header>
         <div class="restaurant-container">
-            <h2>Pizza Hub</h2>
+            <h2>Zy's Pizza</h2>
             <p>Saboreie nossas pizzas artesanais feitas com ingredientes frescos e a tradicional massa italiana.</p>
             <p>Endereço: R. Garibaldo Prince, Pomar do Rio, Lauro de Freitas - BA, 42700-000</p>
             <p>Horário de funcionamento: 18h - 23h</p>
 
-            <!-- Mapa inserido dentro do container -->
             <div class="map-container">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231.49817289860326!2d-38.30041045489583!3d-12.865917246869962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7163e3e0c859603%3A0xba63b6b8ec3fbd3b!2zQ2VtaXTDqXJpbyBkZSBQb3J0w6Nv!5e1!3m2!1spt-BR!2sbr!4v1741206223062!5m2!1spt-BR!2sbr"
@@ -145,11 +149,9 @@
             </div>
         </div>
         
-        <!-- Botão de volta -->
         <a href="./index.html" class="btn-secondary">Voltar para a Tela Inicial</a>
     </div>
 
-    <!-- Comentários -->
     <div class="comentarios">
         <h3>Deixe seu comentário</h3>
         <textarea placeholder="Escreva seu comentário aqui..."></textarea>

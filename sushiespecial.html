@@ -1,0 +1,156 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita Sushi Especial - Fomepédia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.89) , rgb(112, 27, 27),#c23400,#c20000c7);
+            color: white;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            padding: 50px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #FF4500;
+        }
+        .recipe-container {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: #FF4500;
+        }
+        .btn-secondary {
+            background: #333;
+            width: 50%;
+            padding: 12px;
+            margin-top: 20px;
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn-secondary:hover {
+            background: #555;
+        }
+        .comentarios {
+            margin-top: 20px;
+            padding: 20px;
+            background: #222;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        textarea {
+        width: 90%;
+        height: 80px;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        resize: none;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #FF4500; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #FF4500; 
+        }
+        .estrelinha {
+            position: relative;
+            
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            font-size: 30px;
+        }
+        .estrelinha input {
+            display: none;
+        }
+        .estrelinha label {
+            color: #ccc;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+        .estrelinha input:checked ~ label,
+        .estrelinha input:checked ~ label ~ label {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Fomepédia</div>
+        </header>
+        <div class="recipe-container">
+            <h2>Receita - Sushi Especial</h2>
+            <p>Ingredientes:</p>
+            <ul>
+                <li>2 xícaras de arroz para sushi</li>
+                <li>2 xícaras de água</li>
+                <li>1/2 xícara de vinagre de arroz</li>
+                <li>Alga nori</li>
+                <li>150g de salmão fresco</li>
+                <li>100g de cream cheese</li>
+                <li>1/2 pepino cortado em tiras</li>
+                <li>Gergelim para finalizar</li>
+                <li>Molho shoyu para acompanhar</li>
+            </ul>
+            <p>Modo de preparo:</p>
+            <ol>
+                <li>Cozinhe o arroz conforme as instruções e misture o vinagre.</li>
+                <li>Espalhe o arroz sobre a alga nori.</li>
+                <li>Adicione o salmão, cream cheese e o pepino em tiras.</li>
+                <li>Enrole firmemente e corte em fatias.</li>
+                <li>Polvilhe com gergelim e sirva com molho shoyu.</li>
+            </ol>
+        </div>
+        <a href="./index.html" class="btn-secondary">Voltar para a Tela Inicial</a>
+        <div class="comentarios">
+            <h3>Deixe seu comentário</h3>
+            <textarea placeholder="Escreva seu comentário aqui..."></textarea>
+            <div class="estrelinha">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+            </div>
+            <button type="submit">Enviar Comentário</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar - Fomepédia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.89) , rgb(112, 27, 27),#c23400,#c20000c7);
+            color: white;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .logo a{
+            text-decoration: none !important;
+            font-size: 28px;
+            font-weight: bold;
+            color: #FF4500;
+        }
+        .btn {
+            padding: 12px 25px;
+            background: #FF4500;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            margin: 40px 0;
+            color: #FF4500;
+        }
+        .grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .social-icons{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .social-icons img{
+            width: 35px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><a href="./index.html" style="color: #FF4500;">Fomepédia</a></div>
+            <div>
+                <a href="index.html" class="btn">Início</a>
+                <a href="cadastro.html" class="btn">Cadastrar</a>
+            </div>
+        </header>
+        <h2 class="section-title">Explore Novas Receitas</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://444kyxg.github.io/macarrao.png" style="width: 85%"alt="Macarrão">
+                <h3>Macarrão Alfredo</h3>
+                <a href="macarraoalfredo.html" class="btn">Ver Receita</a>
+            </div>
+            <div class="card">
+                <img src="https://www.pngall.com/wp-content/uploads/2016/05/Burger-PNG.png" style="width: 64%" alt="Hamburguer">
+                <h3>Hamburguer Artesanal</h3>
+                <a href="hamburguerartesanal.html" class="btn">Ver Receita</a>
+            </div>
+        </div>
+        <h2 class="section-title">Descubra Novos Restaurantes</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://444kyxg.github.io/zypizza.png" style="width: 50%" alt="Pizzaria">
+                <h3>Pizza Hub</h3>
+                <a href="pizzahub.html" class="btn">Ver Restaurante</a>
+            </div>
+            <div class="card">
+                <img src="https://444kyxg.github.io/sushicabrunco.png" style="width: 50%" alt="Restaurante Japonês">
+                <h3>Sushi World</h3>
+                <a href="sushiworld.html" class="btn">Ver Restaurante</a>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://x.com/fomepedia" target="_blank"><img src="https://444kyxg.github.io/twitter.png"></a>
+            <a href="https://www.instagram.com/fomepedia/" target="_blank"><img src="https://444kyxg.github.io/instagram.png"></a>
+        </div>
+    </div>
+</body>
+</html>

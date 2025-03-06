@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receita Hambúrguer Artesanal - Fomepédia</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -46,7 +47,7 @@
         }
         .btn-secondary {
             background: #333;
-            width: 50%;
+            width: 60%;
             padding: 12px;
             margin-top: 20px;
             border-radius: 5px;
@@ -106,14 +107,20 @@
         }
         .comentarios {
             margin-top: 20px;
-            padding: 20px;
+            padding: 15px;
             background: #222;
-            border-radius: 10px;
+            border-radius: 5px;
             text-align: center;
             color: white;
+            height: 245px;
             width: 770px;
             margin-left: auto;
             margin-right: auto;
+        }
+        textarea {
+            height: 50px; 
+            resize: none; 
+            overflow-y: auto; 
         }
     </style>
 </head>
@@ -146,7 +153,7 @@
         <a href="./index.html" class="btn-secondary">Voltar para a Tela Inicial</a>
         <div class="comentarios">
             <h3>Deixe seu comentário</h3>
-            <textarea placeholder="Escreva seu comentário aqui..."></textarea>
+            <textarea placeholder ="Escreva seu comentário aqui..."></textarea>
             <div class="estrelinha">
                 <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
                 <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
